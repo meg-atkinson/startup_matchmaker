@@ -32,7 +32,7 @@ Dark grey:      #999999 ;
 /* FONT STYLES
 /*******************************************/
 
-h1, .banner p, .column h2 {
+h1 a, .banner p, .column h2 {
 	font-family: "Merriweather", serif;
 }
 
@@ -41,7 +41,7 @@ h1, .banner p, .column h2 {
 	
 }
 
-header a, .profile-box a, .column a, .profile a {
+header ul a, .profile-box a, .column a, .profile a {
 	font-family: "Oswald", sans-serif;
 }
 
@@ -88,7 +88,7 @@ header {
 	padding-top: 20px;
 }
 
-h1 {
+h1 a {
 	color: #FFF653;
 	float:left;
 	font-size: 30px;
@@ -257,7 +257,7 @@ footer {
 
 .profile p {
 	color: black;
-	margin: 10px 0;
+	padding-top: 10px;
 }
 
 .profile span {
@@ -265,6 +265,7 @@ footer {
 	border-radius: 20px;
 	color: #FFF;
 	padding: 3px 10px;
+	line-height: 2;
 }
 
 .profile a {
@@ -272,5 +273,5 @@ footer {
 	border-bottom: 3px solid #CEC441;
 	font-size: 16px;
 	letter-spacing: 1px;
-	margin-top: 20px;
+	margin-top: 10px;
 }
