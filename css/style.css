@@ -1,0 +1,276 @@
+/*
+Light yellow:   #FFF653 ;
+Mid yellow:     #CEC441 ;
+Light grey:     #C6C6C6 ;
+Mid grey:       #AAAAAA ;
+Dark grey:      #999999 ;
+*/
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+
+
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/******************************************
+/* FONT STYLES
+/*******************************************/
+
+h1, .banner p, .column h2 {
+	font-family: "Merriweather", serif;
+}
+
+.profile-box h2 {
+	font-family: Oswald;
+	
+}
+
+header a, .profile-box a, .column a, .profile a {
+	font-family: "Oswald", sans-serif;
+}
+
+header li:nth-child(n+3) a, .profile-box p, .column p, .profile img, .profile p, .profile span, footer {
+	font-family: "Source Sans Pro", sans-serif;
+}
+
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+.container {
+	width: 95%;
+	margin: 0 auto;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+	font-size: 20px;
+}
+
+.profile-box a,.column a, .profile a {
+	border-radius: 5px;
+	color: black;
+	display: block;
+	padding: 10px 0;
+	text-align: center;	
+}
+
+p {
+	font-size: 20px;
+	line-height: 1.6;
+}
+
+/******************************************
+/* HEADER STYLES
+/*******************************************/
+
+header {
+	background-color: black;
+	border-bottom: 5px solid #FFF653;
+	padding-top: 20px;
+}
+
+h1 {
+	color: #FFF653;
+	float:left;
+	font-size: 30px;
+	letter-spacing: 1px;
+	padding-bottom: 20px;
+}
+
+header ul {
+	float: right;
+	padding-left: 40px;
+	padding-bottom: 20px;
+	padding-top: 5px;
+}
+
+header li {
+	display: inline-block;
+	color: white;
+	padding: 0 10px;
+}
+
+/******************************************
+/* BANNER STYLES
+/*******************************************/
+
+.banner {
+	background-color: #C6C6C6;
+	border-top: 1px solid #AAA;
+	box-shadow: 0 1px 5px rgba(0,0,0,0.5);
+	text-align: center;
+	font-style: italic;
+	padding: 20px 0;
+}
+
+.banner p {
+	font-size: 26px;
+	font-weight: 800;
+}
+
+del {
+	color: #AAA;
+}
+
+ins {
+	text-decoration: none;
+	border-bottom: 3px solid #FFF653;
+
+}
+
+/******************************************
+/* INTRO STYLES
+/*******************************************/
+
+.intro {
+	background-image: url(../images/coworking.jpg);
+	padding: 20px 0;
+}
+
+.profile-box {
+	background-color: rgba(255, 255, 255, 0.7);
+	box-shadow: 0 0 5px #999999;
+	display: inline-block;
+	float: right;
+	padding: 20px;
+	width: 32%;
+}
+
+.profile-box h2 {
+	font-size: 26px;
+	font-style: black;
+}
+
+.profile-box p {
+	padding: 20px 0;
+}
+
+.profile-box a {
+	background-color: #FFF653;
+	border-bottom: 3px solid #CEC441;
+
+}
+
+/******************************************
+/* TEASER COLUMN STYLES
+/*******************************************/
+
+.teaser-columns {
+	background-color: #FFF;
+	padding: 20px 0;
+}
+
+.column {
+	float: left;
+	width: 33.333333333333333333%;
+	padding: 20px;
+	border-right: 1px solid #AAAAAA;
+}
+
+.column:last-child {
+	border-right: none;
+}
+
+.column h2 {
+	font-size: 26px;
+}
+
+.column p {
+	padding: 10px 0 20px;
+}
+
+.column a {
+	background-color: #AAAAAA;
+	border-bottom: 3px solid #999999;
+}
+
+/******************************************
+/* FOOTER STYLES
+/*******************************************/
+
+footer {
+	background-color: black;
+	bottom: 0;
+	color: white;
+	font-size: 20px;
+	padding: 20px 0;
+}
+
+/******************************************
+/* DEVELOPERS PAGE STYLES
+/*******************************************/
+
+.developers {
+	background-color: #C6C6C6;
+	padding: 10px 0;
+}
+
+.profile {
+	background-color: white;
+	float: left;
+	margin: 10px 0;
+	margin-right: 1.66666666666666666666%;
+	padding: 10px;
+	width: 23.75%;
+}
+
+.profile:nth-child(4n) {
+	margin-right: 0;
+}
+
+.blank-profile-image {
+	background-color: #C6C6C6;
+	display: block;
+	height: 280px;
+	position: relative;
+	width: 100%;
+}
+
+.profile img {
+	color: #999999;
+	font-size: 30px;
+    left: 50%;
+    margin-right: -50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.profile p {
+	color: black;
+	margin: 10px 0;
+}
+
+.profile span {
+	background-color: #646668;
+	border-radius: 20px;
+	color: #FFF;
+	padding: 3px 10px;
+}
+
+.profile a {
+	background-color: #FFF653;
+	border-bottom: 3px solid #CEC441;
+	font-size: 16px;
+	letter-spacing: 1px;
+	margin-top: 20px;
+}
